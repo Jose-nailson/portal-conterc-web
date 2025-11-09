@@ -5,14 +5,14 @@
 /* ============================================= */
 
 /* 1. Base (Variáveis e estilos globais) */
-@import url("base/_variable.css");
-@import url("base/_global.css");
+@import url("base/variable.css");
+@import url("base/global.css");
 
 /* 2. Componentes (Peças reutilizáveis) */
-@import url("components/_layout.css");
-@import url("components/_forms.css");
-@import url("components/_buttons.css");
-@import url("components/_messages.css");
+@import url("components/layout.css");
+@import url("components/forms.css");
+@import url("components/buttons.css");
+@import url("components/messages.css");
 
 /* ============================================= */
 /* Sistema de Login - Estilos Isolados          */
