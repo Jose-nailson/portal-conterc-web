@@ -1,0 +1,53 @@
+/* ============================================= */
+/* Arquivo: _layout.css                          */
+/* Estilos de estrutura (header, main, container)*/
+/* ============================================= */
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-card);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: var(--sombra-caixa);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: var(--espacamento-grande);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.form-section {
+    background-color: var(--cor-fundo-card);
+    padding: var(--espacamento-grande);
+    border-radius: var(--borda-radius);
+    box-shadow: var(--sombra-caixa);
+}
+
+h2 {
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-fundo-site);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: var(--espacamento-padrao);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

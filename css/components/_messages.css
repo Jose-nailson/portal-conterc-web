@@ -1,0 +1,32 @@
+/* ============================================= */
+/* Arquivo: _messages.css                        */
+/* Estilos de feedback (sucesso, erro, info)     */
+/* ============================================= */
+
+.form-message {
+    margin-top: var(--espacamento-padrao);
+    padding: 10px;
+    border-radius: 4px;
+    display: none; /* Começa escondido */
+    font-weight: 500;
+}
+
+/* Classes de modificação (BEM-like) */
+.form-message--sucesso {
+    display: block !important;
+    background-color: var(--cor-info-fundo);
+    border: 1px solid var(--cor-sucesso);
+    color: var(--cor-sucesso);
+}
+
+.form-message--erro {
+    display: block !important;
+    background-color: var(--cor-erro-fundo);
+    border: 1px solid var(--cor-erro);
+    color: var(--cor-erro);
+}
+
+.form-message--info {
+    display: block !important;
+    color: var(--cor-texto-secundario);
+}

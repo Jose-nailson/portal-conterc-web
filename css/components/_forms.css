@@ -1,0 +1,36 @@
+/* ============================================= */
+/* Arquivo: _forms.css                           */
+/* Estilos de formulários (form, input, label)   */
+/* ============================================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: var(--peso-fonte-semibold);
+    color: var(--cor-texto-secundario);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    padding: 12px;
+    margin-bottom: var(--espacamento-padrao);
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+    font-size: var(--tamanho-fonte-base);
+    font-family: var(--fonte-principal);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de foco para acessibilidade e UX */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: var(--cor-borda-foco);
+    box-shadow: 0 0 0 2px rgba(0, 74, 145, 0.2);
+}

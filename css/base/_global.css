@@ -1,0 +1,23 @@
+/* ============================================= */
+/* Arquivo: _global.css                          */
+/* Estilos globais da página (body, html, fontes)*/
+/* ============================================= */
+
+/* Usamos 'border-box' para um layout mais fácil */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo-site);
+    color: var(--cor-texto-primario);
+    font-size: var(--tamanho-fonte-base);
+    font-weight: var(--peso-fonte-normal);
+    line-height: 1.6;
+}

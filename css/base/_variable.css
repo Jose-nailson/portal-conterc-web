@@ -1,0 +1,34 @@
+/* ============================================= */
+/* Arquivo: _variables.css                       */
+/* Central de Váriáveis de Design (Tokens)       */
+/* ============================================= */
+
+:root {
+    /* Cores */
+    --cor-primaria: #680404; 
+    --cor-primaria-hover: #730d00;
+    --cor-sucesso: #28a745;
+    --cor-erro: #dc3545;
+    --cor-info-fundo: #e6f7ec;
+    --cor-erro-fundo: #fbeaea; /* << CORRIGIDO AQUI */
+    --cor-fundo-site: #f4f4f4;
+    --cor-fundo-card: #ffffff;
+    --cor-texto-primario: #333;
+    --cor-texto-secundario: #555;
+    --cor-borda: #ccc;
+    --cor-borda-foco: var(--cor-primaria);
+
+    /* Tipografia */
+    --fonte-principal: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --tamanho-fonte-base: 1rem; /* 16px */
+    --peso-fonte-normal: 400;
+    --peso-fonte-semibold: 600;
+
+    /* Espaçamento */
+    --espacamento-padrao: 15px;
+    --espacamento-grande: 25px;
+
+    /* Outros */
+    --sombra-caixa: 0 4px 8px rgba(0,0,0,0.1);
+    --borda-radius: 8px;
+}

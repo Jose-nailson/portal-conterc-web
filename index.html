@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal CONTERC - Banco do Nordeste</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Sistema de Login -->
+    <div id="login-container" class="login-container">
+        <div class="login-form">
+            <h2>Portal CONTERC - Banco do Nordeste</h2>
+            <p>Acesso Restrito para Escritórios Credenciados</p>
+            
+            <form id="form-login">
+                <div class="form-group">
+                    <label for="login-email">Email do Escritório:</label>
+                    <input type="email" id="login-email" required placeholder="seu@escritorio.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="login-senha">Senha:</label>
+                    <input type="password" id="login-senha" required placeholder="Sua senha">
+                </div>
+                
+                <button type="submit" id="btn-login">Acessar Sistema</button>
+                
+                <div id="msg-login" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal (ficará escondido até o login) -->
+    <div id="main-content" style="display: none;">
+        <header>
+            <h1>Portal CONTERC - Banco do Nordeste</h1>
+            <p>Sistema de Rastreamento de Processos Jurídicos</p>
+            <button id="btn-logout" style="position: absolute; top: 20px; right: 20px; background: #dc3545;">Sair</button>
+        </header>
+
+        <main>
+            <div class="container">
+                <section class="form-section">
+                    <h2>Enviar Novo Processo</h2>
+                    
+                    <form id="form-criar-processo">
+                        <label for="escritorio">Nome do Escritório *</label>
+                        <input type="text" id="escritorio" required placeholder="Informe o nome do escritório">
+
+                        <label for="email">E-mail do Solicitante *</label>
+                        <input type="email" id="email" required placeholder="seu@escritorio.com">
+
+                        <label for="dataAto">Data do Ato *</label>
+                        <input type="date" id="dataAto" required>
+
+                        <label for="processo">Nº do Processo Principal *</label>
+                        <input type="text" id="processo" required 
+                               placeholder="0000000-00.0000.0.00.0000"
+                               title="Formato: 7 números, traço, 2 números, ponto, 4 números, etc.">
+
+                        <label for="processoOrigem">Nº do Processo de Origem *</label>
+                        <input type="text" id="processoOrigem" required 
+                               placeholder="0000000-00.0000.0.00.0000">
+
+                        <label for="parte">Nome da Parte *</label>
+                        <input type="text" id="parte" required placeholder="Nome completo da parte envolvida">
+
+                        <button type="submit" id="btn-submit-criar">Enviar Solicitação</button>
+                        
+                        <div id="msg-criar" class="form-message"></div>
+                    </form>
+                </section>
+
+                <section class="form-section">
+                    <h2>Consultar Status do Processo</h2>
+                    
+                    <form id="form-consultar-processo">
+                        <label for="numProcessoConsulta">Nº do Processo *</label>
+                        <input type="text" id="numProcessoConsulta" required 
+                               placeholder="0000000-00.0000.0.00.0000">
+
+                        <button type="submit" id="btn-submit-consultar">Consultar Processo</button>
+
+                        <div id="msg-consulta" class="form-message"></div>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer style="text-align: center; padding: 20px; color: var(--cor-texto-secundario);">
+            <p>Banco do Nordeste - Sistema CONTERC | Fase 1: Frontend</p>
+        </footer>
+    </div>
+</body>
+</html>
